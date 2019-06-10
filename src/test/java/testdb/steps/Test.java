@@ -23,16 +23,16 @@ public class Test {
 			Date date = new Date();
 			String timestamp = dateFormat.format(date);
 
-			String query = "insert into " + table + " values(NULL,'tel3A+60" + timestamp
-					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+61"
+			String query = "insert into " + table + " values(NULL,'tel3A+10" + timestamp
+					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+11"
 					+ timestamp
-					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+62"
+					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+12"
 					+ timestamp
-					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+63"
+					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+13"
 					+ timestamp
-					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+64"
+					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+14"
 					+ timestamp
-					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+65"
+					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+15"
 					+ timestamp + "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57');";
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection(dbUrl, username, password);

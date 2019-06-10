@@ -19,12 +19,12 @@ public class Test {
 		String dbUrl = "jdbc:mysql://18.206.74.47/" + database;
 
 		for (int i = 0; i < 700000; i++) {
-			DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+			DateFormat dateFormat = new SimpleDateFormat("MMddHHmmss");
 			Date date = new Date();
 			String timestamp = dateFormat.format(date);
 
-			String query = "insert into "+table+"(MSISDN,API_ID,API_NAME,USER_ID,last_updated,created) values('tel3A+92" + timestamp
-					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57');";
+			String query = "insert into "+table+"(MSISDN,API_ID,API_NAME,USER_ID,last_updated,created) values('tel3A+" + timestamp
+					+ ""+i+"',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57');";
 			
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con = DriverManager.getConnection(dbUrl, username, password);

@@ -23,7 +23,7 @@ public class Test {
 			Date date = new Date();
 			String timestamp = dateFormat.format(date);
 
-			String query = "insert into " + table + " values(NULL,'tel3A+93" + timestamp
+			String query = "insert into " + table + " values(NULL,'tel3A+" + timestamp
 					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57');";
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection(dbUrl, username, password);

@@ -19,7 +19,7 @@ public class Test {
 		String dbUrl = "jdbc:mysql://18.206.74.47/" + database;
 
 		for (int i = 0; i < 700000; i++) {
-			DateFormat dateFormat = new SimpleDateFormat("MMddHHmmss");
+			DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss");
 			Date date = new Date();
 			String timestamp = dateFormat.format(date);
 

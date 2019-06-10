@@ -23,17 +23,8 @@ public class Test {
 			Date date = new Date();
 			String timestamp = dateFormat.format(date);
 
-			String query = "insert into " + table + " values(NULL,'tel3A+987" + timestamp
-					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+986"
-					+ timestamp
-					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+985"
-					+ timestamp
-					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+984"
-					+ timestamp
-					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+983"
-					+ timestamp
-					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+982"
-					+ timestamp + "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57');";
+			String query = "insert into blacklistmsisdn(MSISDN,API_ID,API_NAME,USER_ID,last_updated,created) values('tel3A+1000" + timestamp
+					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57');";
 			
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection(dbUrl, username, password);

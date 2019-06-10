@@ -23,7 +23,7 @@ public class Test {
 			Date date = new Date();
 			String timestamp = dateFormat.format(date);
 
-			String query = "insert into " + table + " values(NULL,'tel3A+10" + timestamp
+			String query = "insert into " + table + " values(NULL,'tel3A+943" + timestamp
 					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+944"
 					+ timestamp
 					+ "',2,'admin:payment:v1','admin','2018-12-18 06:59:18','2018-12-18 06:59:57'),(NULL,'tel3A+945"
